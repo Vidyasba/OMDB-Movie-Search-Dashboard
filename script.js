@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const loader = document.getElementById('loader');
     let timeout;
 
-    function searchMovies(movieTitle = 'Batman') {
+    function searchMovies() {
         const apiKey = '75fb6cba';
-        // const movieTitle = movieTitleInput.value;
+        const movieTitle = movieTitleInput.value;
 
         if (!apiKey || !movieTitle) {
             resultContainer.innerHTML = '';
@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 resultContainer.innerHTML = '<p>An error occurred while fetching data.</p>';
             });
     }
+    
 
     // Listen to changes in the movie title input field
     movieTitleInput.addEventListener('input', function () {
@@ -57,6 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
         timeout = setTimeout(searchMovies, 500); // Delay search by 500 milliseconds
     });
 
-    // Initial search when the page loads (if you want)
-     searchMovies('Batman');
+   
+
 });
