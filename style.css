@@ -1,0 +1,105 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&family=Montserrat&family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: #242A32;
+    font-family: 'Inter', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+/* .heading{
+    background: linear-gradient(0deg, #0296E5, #0296E5),
+    linear-gradient(0deg, #242A32, #242A32);
+    text-align: center;
+    border: 1px solid #0296E5
+    
+      
+} */
+.heading {
+    
+        font-size: 36px;
+        font-weight: bold;
+        color: #242A32; /* Set text color */
+        text-shadow:
+          -1px -1px 0 #0296E5, /* Top left */
+          1px 1px 0 #0296E5,  /* Top right */
+          -1px -1px 0 #0296E5,  /* Bottom left */
+          -1px -1px 0 #0296E5;   /* Bottom right */
+      
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+        }
+      input{
+        margin:5px;
+        margin-left:10px ;
+        width: 1190px;
+        height: 21px;
+        top: 134px;
+        left: 33px;
+        border-radius: 5px; 
+        background-color: #3A3F47;
+        border: none;
+        padding: 10px;
+      }
+      input:focus{
+        border:none;
+      }
+
+      /* ... Existing styles ... */
+
+.loader {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+.result-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.movie {
+    margin:10px;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    max-width: 150px;
+    color:white;
+    
+}
+
+.movie h2 {
+    font-size: 14px; /* Adjust the font size as needed */
+    margin: 5px 0; /* Adjust the margin as needed */
+    color:white;
+    background-color: black;
+}
+.movie p{
+    background-color: black;
+}
+.movie img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
